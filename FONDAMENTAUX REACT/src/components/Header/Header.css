@@ -1,19 +1,29 @@
+body {
+  padding-top: 100px; /* Ajuste selon la hauteur de ta navbar */
+}
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 7px;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /*  espace intérieur pour mieux respirer */
+  background-color: #fff; /* couleur de fond pour éviter la transparence */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ombre plus douce */
+  z-index: 1000; /* valeur plus élevée pour être au-dessus des éléments */
+}
+
+  .nav-list{
+    font-size: 1.2rem;
   }
-  
+
   .nav-list ul{
     position: relative;
     display: flex;
+    gap: 20px;
+    margin-right: 10px;
   }
   
   .nav-list ul li{
@@ -28,4 +38,5 @@
   .logo{
     font-size: 25px;
     font-weight: bold;
+    margin-left: 10px;
   }

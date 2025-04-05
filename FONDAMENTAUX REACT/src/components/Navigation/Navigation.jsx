@@ -1,4 +1,6 @@
 import Presentation from "../Presentation/Presentation";
+import React from 'react'
+import { NavLink } from "react-router-dom";
 
 const Navigation = ({props}) => {
     // Destructuring props
@@ -9,14 +11,9 @@ const Navigation = ({props}) => {
         <nav>
             <div className='nav-list'>
                 <ul>
-                    <li>
-                        <a href="#">{props.Menu_1}</a>
-                    </li>
+                    {props.items.map((item, index) => <NavLink to={item.link} key={index}> {item.title} </NavLink> )}
                     {/* <li>
-                        <a href="#">{props.Menu_2} </a>
-                    </li>
-                    <li>
-                        <a href="#"> {props.Menu_3} </a>
+                        <a href="#">{props.Menu_1}</a>
                     </li> */}
                 </ul>
             </div>

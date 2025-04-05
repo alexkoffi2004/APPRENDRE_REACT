@@ -5,7 +5,7 @@ import "./Header.css";
 // import {image} from "../../assets/image.png";
 
 
-const Header = (props) => {
+const Header = ({props}) => {
   // const NavItems = {
   //   Menu_1: "Presentation",
   //   Menu_2: "Projets",
@@ -16,7 +16,7 @@ const Header = (props) => {
     <header>
       <section className="navbar">
         <Logo />
-        <Navigation props={props.navItem} />
+        <Navigation props={{items: props.navItem}} />
       </section>
     </header>
   );
