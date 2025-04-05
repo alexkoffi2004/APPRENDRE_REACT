@@ -36,7 +36,12 @@ body {
   }
   
   .logo{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
+    list-style: none;
+  }
+
+  .logo_name{
+    text-decoration: none;
   }

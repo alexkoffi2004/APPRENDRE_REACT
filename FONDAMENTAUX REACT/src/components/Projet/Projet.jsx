@@ -1,11 +1,12 @@
 import React from 'react'
 import './Projet.css'
+import { Link } from 'react-router-dom'
 
 const Projects = [
   {
     title: "project 01",
     description: "i'm fullstack developper, i'm student in application developpement",
-    link:"",
+    link:"https://github.com/alexkoffi2004/front-end-Mentor-1-tailwind.git",
     image:"../../../public/ChatGPT Image Apr 4 2025 (1).png"
   },
   {
@@ -51,7 +52,10 @@ const Projet = () => {
             <div className="project_text">
               <h3> {project.title} </h3>
               <p> {project.description} </p>
-              <p> {project.link} </p>
+              
+              <Link to={project.link} className='link'>
+              Repos
+              </Link>
             </div>
             <div className='project_image'>
                <img src={project.image} alt="project_image" /> 

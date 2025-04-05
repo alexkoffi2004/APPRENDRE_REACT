@@ -1,12 +1,14 @@
 import React from 'react'
+import SharedButton from '../SharedButton/SharedButton'
 
-const Contact = () => {
+const Contact = ({props}) => {
   return(
     <>
-    <h1> Contacte </h1>
+    <h1> Contact </h1>
     <p>
       N'hesitez pas à me contacter pour toute demande de renseignement ou collaboration.
     </p>
+     <SharedButton props={{name:'Envoyer'}} />
     </>
   ) 
 }

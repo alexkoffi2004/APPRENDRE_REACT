@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { useState } from 'react';
+
 // import '../'
 
 const Logo = () => {
-    const [name, setName] = useState('FACEBOOK');
     return (
         <> 
             <div className='logo'>
-                <span>{name}</span>
-                <button onClick={() => setName('GOOGLE')}>Change Logo</button>
+                <Link to={"/"} className='logo_name'>
+                    <h3> Portfolio </h3>
+                </Link>
             </div>
         </>
     );
 };
-
 export default Logo

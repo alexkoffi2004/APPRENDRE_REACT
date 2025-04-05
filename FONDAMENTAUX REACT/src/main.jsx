@@ -37,7 +37,5 @@ const router = createBrowserRouter([ // pour informer le naviguateur que le cont
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
   <RouterProvider router={router} />
-  </StrictMode>
 )

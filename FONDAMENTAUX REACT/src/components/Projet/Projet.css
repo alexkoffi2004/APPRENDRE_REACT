@@ -4,17 +4,24 @@
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    border: solid 1px gray;
-    background-color: gray;
+    background-color: rgb(236, 234, 234);
     width: 25rem;
-    height: 25rem;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px;
+    transition: transform 0.3s ease;
+}
+
+.project_card:hover{
+    transform: scale(1.02);
 }
 
 .Projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
     grid-template-rows: repeat(2, auto); /* 2 lignes automatiques */
-    gap: 1rem; /* espace entre les cartes, ajustable */
+    justify-items: center;
+    gap: 3rem; /* espace entre les cartes, ajustable */
     padding: 1rem;
   }
 
@@ -24,7 +31,26 @@
 }
 
 .project_text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: grid;
     justify-items: center;
+
+}
+
+.project_text h3{
+    margin: 0px 0px 15px;
+    text-decoration: underline;
+}
+
+.project_text p{
+    text-align: center;
+    margin-top: 0;
+}
+
+.link{
+    background-color: rgb(193, 192, 192);
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
 }
