@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css'
 import {Header} from './components/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const navItem = [
   {
@@ -18,11 +19,12 @@ const navItem = [
   }
 ]
 const App = () => {
+  const { Project } = useLoaderData()
   return (
     <>
       <Header props={{navItem}} />
       <main>
-        <Outlet/>
+        <Outlet context={{Project}}/>
       </main>
     </>
   )
